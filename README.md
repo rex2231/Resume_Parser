@@ -5,8 +5,7 @@ Using spaCy to train and test a resume parsing model
 ![image](https://user-images.githubusercontent.com/72379583/201525319-7c22e5f9-83f8-4053-94fa-6d279b5447af.png)
 
 # Introduction:
-
-                             Every day, corporations and recruiting firms must process numerous amount of resumes. Working with large amounts of text data, which can be time-consuming and stressful. Data collected from various resumes can be in a variety of formats, such as PDF, DOCX, single-column resumes, double-column resumes, free formats, and so on. And these formats may not be appropriate for the specific application. As a result, we may wonder, “What is resume parsing?” Resume parsing is the process of converting unstructured resume data (.pdf/.docx/.jpeg, etc.) into a structured format.
+Every day, corporations and recruiting firms must process numerous amount of resumes. Working with large amounts of text data, which can be time-consuming and stressful. Data collected from various resumes can be in a variety of formats, such as PDF, DOCX, single-column resumes, double-column resumes, free formats, and so on. And these formats may not be appropriate for the specific application. As a result, we may wonder, “What is resume parsing?” Resume parsing is the process of converting unstructured resume data (.pdf/.docx/.jpeg, etc.) into a structured format.
 
 Sounds easy right? At first, I assumed it was quite simple. Just use some patterns to mine the data, but it turns out that I was wrong! Building a resume parser is difficult because there are so many types of resume layouts that you could imagine.
 
