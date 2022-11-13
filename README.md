@@ -41,17 +41,17 @@ train, test = train_test_split(cv_data, test_size=0.3)
 
 ## Step #1: Setting up Google Colab
 
-                           To train our model, We need more GPU-oriented processing, which we can also do in our local system with the help of Jupyter. I chose to work in colab notebook because it provides free access to computing resources, including GPUs, and it is simple to set up the GPU.
+To train our model, We need more GPU-oriented processing, which we can also do in our local system with the help of Jupyter. I chose to work in colab notebook because it provides free access to computing resources, including GPUs, and it is simple to set up the GPU.
 
 Also, I would like to run the project on my local system, and I tried it, but creating a GPU environment for my Jupiter notebook didn't go well for various reasons, so the catch here is that if you can configure your local pc, go for it because colab has some GPU usage limits, and if I succeed in accessing my local GPU via Jupyter, I will certainly create a blog on that.
 
-![screencapture-colab-research-google-2022-11-12-20_04_18 (1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/570fc827-ae73-4da4-8e1d-2bf4b825e30f/screencapture-colab-research-google-2022-11-12-20_04_18_(1).png)
+![image](https://user-images.githubusercontent.com/72379583/201525433-643f70db-1166-4367-a5f4-4b801d44408e.png)
 
 So, now that you've successfully created your Colab notebook, proceed to package installation and import..
 
 ## Step #2: Package installation and import
 
-                       Now we need to import the required packages, which we discussed earlier; however, before we do so, we must pip install them into our environment to ensure that the code continues to function properly even after months and to avoid changes in function names in the future. I have mentioned the versions of spaCy and spaCy transformers. 
+Now we need to import the required packages, which we discussed earlier; however, before we do so, we must pip install them into our environment to ensure that the code continues to function properly even after months and to avoid changes in function names in the future. I have mentioned the versions of spaCy and spaCy transformers. 
 
 ```
 !pip install spacy_transformers==1.1.4
@@ -71,9 +71,9 @@ Moving on to Data Preparation
 
 ## Step #3: Data Preparation
 
-                       When building any machine learning model, collecting training data can be a time-consuming and frustrating experience. It may appear to be a nightmarish procedure. In this project, we used approximately 200 resumes to train our model.
+When building any machine learning model, collecting training data can be a time-consuming and frustrating experience. It may appear to be a nightmarish procedure. In this project, we used approximately 200 resumes to train our model.
 
-![Data+Collection+AdobeStock_105428565.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a664d342-806f-4d2d-b64c-3022d5b0fdc3/DataCollectionAdobeStock_105428565.jpeg)
+![image](https://user-images.githubusercontent.com/72379583/201525481-42055fac-318e-4040-8093-506b1140f687.png)
 
 So, for this project, I used training data from Kaggle, which made it easier for me to collect the data. In most cases, you won't be able to find your desired data set online, so you'll have to create it yourself. How should it be done? Hmm, just look it up, and you'll get an idea. You can also refer to the article below; it helped me understand data preparation better.
 
@@ -121,10 +121,9 @@ coming up next step#4
 ## Step #4: Model Training & Testing
 
  
+![image](https://user-images.githubusercontent.com/72379583/201525505-506c2e38-879a-421a-a61c-ecfa676a0221.png)
 
-![61a7e03599a2cf391153775c_UHjoS-oxHSjEjznn0DkFSTsLqYlaY74lCBTbwHVcBLR5MMsbv3gz4wPFblE4OZaF9ctQwDlnAfpO9emlTE5tJYYzqKwNm2MYgZ7cD4QF7TRejnQrHhOvXugo1Ym9egRIH8iv5m5o.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33e15973-0eed-40c9-8f46-a37a9cdddac7/61a7e03599a2cf391153775c_UHjoS-oxHSjEjznn0DkFSTsLqYlaY74lCBTbwHVcBLR5MMsbv3gz4wPFblE4OZaF9ctQwDlnAfpO9emlTE5tJYYzqKwNm2MYgZ7cD4QF7TRejnQrHhOvXugo1Ym9egRIH8iv5m5o.png)
-
-           Training data for an NLP project may be found in a variety of formats. SpaCy provides converters for some popular formats, such as CoNLL. In other situations, you must prepare the training data yourself.
+Training data for an NLP project may be found in a variety of formats. SpaCy provides converters for some popular formats, such as CoNLL. In other situations, you must prepare the training data yourself.
 
 When converting training data for use in spaCy, the main thing to remember is to create Doc objects that look exactly like the results you want as pipeline output. On disk the annotations will be saved as a `[DocBin](https://spacy.io/api/docbin)`in the `[.spacy`](https://spacy.io/api/data-formats#binary-training) format, but the details of that are handled automatically.
 
