@@ -13,13 +13,13 @@ Let’s have a look at some essential topics to get a better understanding of ho
 
 ## spaCy
 
-              spaCy is a popular and easy-to-use natural language processing library in Python. It provides current state-of-the-art accuracy and speed levels, and has an active open source community.
+spaCy is a popular and easy-to-use natural language processing library in Python. It provides current state-of-the-art accuracy and speed levels, and has an active open source community.
 
 spaCy enables you to create applications that process and “understand” large amounts of text. It can be used to create systems for information extraction, NLU, or text pre-processing before deep learning.
 
 ## train_test_split
 
-                  The **`train_test_split`** function of the **`sklearn.model_selection`** package in Python splits arrays or matrices into random subsets for train and test data, respectively.
+The **`train_test_split`** function of the **`sklearn.model_selection`** package in Python splits arrays or matrices into random subsets for train and test data, respectively.
 
 To use the `train_test_split` function, we’ll import it into our program as shown below:
 
@@ -30,13 +30,13 @@ train, test = train_test_split(cv_data, test_size=0.3)
 
 ## PyMuPDF
 
-                  It is a simple Python package for text-based information extraction from PDF files that can be used to test our model.
+It is a simple Python package for text-based information extraction from PDF files that can be used to test our model.
                   
 # Implementation:
 
 # Creating a Resume Parser Using spaCy
 
-                          Using SpaCy, we will build a model that will extract the key points from a resume. We plan to train the model on nearly 200 resumes. When the model is complete, we will extract the text from a new resume and feed it into the model to generate the summary.
+Using SpaCy, we will build a model that will extract the key points from a resume. We plan to train the model on nearly 200 resumes. When the model is complete, we will extract the text from a new resume and feed it into the model to generate the summary.
 
 ## Step #1: Setting up Google Colab
 
